@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 1</title>
+
+
+    <script type="text/javascript">
+        function Alumno(nombre){this.nombre=nombre; 
+            alert("Creación de un objeto de la clase  Alumno");
+    }
+
+    Alumno.prototype.nombre="Nombre  Alumno"
+    Alumno.prototype.saludaAlumno=function()
+{
+    alert("Hola");
+}
+    var alumno1 =new Alumno( "Maria" );
+    var alumno2 =new Alumno( "Federico");
+
+    alert ('Elnombre del alumno es:' + alumno1.nombre)
+    alumno1.saludaAlumno();
+
+
+    </script>
+
+
+
+
+</head>
+<body>
+    
+</body>
+</html>

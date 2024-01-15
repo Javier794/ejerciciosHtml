@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+
+        var nombre;
+        var fecha=  new Date();
+        var hora =fecha.getHours();
+        var minutos = fecha.getMinutes();
+        var dia = fecha.getDate()
+        nombre = window.prompt(" introduzca su nombre : ")
+
+
+
+
+            if(hora < 12 ) document .writeln(" Buenos días " + nombre); // operador || significa or (que se cumpla una de las dos condiciones)
+            else if(hora >= 12 && hora <20 )document.writeln(" Buenos tardes " + nombre);  // operador && significa y ( que se cumplan las dos condiciones)
+            else document.writeln(" Buenos noches " + nombre);
+
+         document.writeln("<br>" )
+
+document.writeln(","+nombre+" son las "+hora+":"+minutos+ ",bienvenido/a a mi página web")
+
+</script>
+
+
+
+
+</head>
+<body>
+    
+</body>
+</html>

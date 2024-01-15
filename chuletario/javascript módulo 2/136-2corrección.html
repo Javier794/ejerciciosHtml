@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+
+        var nombre;
+        var fecha = new Date();
+        var hora = fecha.getHours();
+        var minutos = fecha.getMinutes();
+        var dia = fecha.getDate();
+        var saludo;
+
+        nombre = window.prompt("Introduzca su nombre: ");
+
+        switch (true) {
+
+            case (hora < 12):
+                saludo = "Buenos días, " + nombre;
+                break;
+
+            case (hora >= 12 && hora < 20):
+                saludo = "Buenas tardes, " + nombre;
+                break;
+
+            case (hora >= 20):
+                saludo = "Buenas noches, " + nombre;
+                break;
+
+            default:
+                saludo = "Hola, " + nombre;}
+                saludo += " son las " + hora + ":" + (minutos < 10 ? "0" : "") + minutos;
+                document.writeln(saludo);
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica javascript</title>
+   
+    <script type="text/javascript">
+            document.writeln("<h1>Practicando javascrpt<h1>")
+
+
+        var palabra=""; 
+        var numero ;
+        var multiplicador = 1 ;
+        var resultado; 
+
+      
+          palabra = window.prompt(" introduzca la palabra ok : ")//PRIMER PROMPT
+
+          if(palabra=="ok"){numero=window.prompt("introduce un número entero"); //SEGUNDO PROMPT //PREGUNTA SI ES OK
+          if (!isNaN( numero)){ //SI ES NÚMERO....
+            while(multiplicador<11
+          ){ 
+                resultado=multiplicador*numero; 
+                document.writeln(numero+"x"+multiplicador+"="+resultado);
+                document.writeln("<br>");
+                multiplicador=multiplicador+1 ;
+            } 
+          }else{document.writeln("por favor, recargue la página e intente de nuevo")} //LO  QUE SALE SI NO ES NÚMERO
+          }else{document.writeln(" Por favor, recarga la página e introduzca ok")} // RESPUESTA SI ES OK 
+          
+
+
+
+
+
+    </script>
+
+
+</head>
+<body>
+    
+</body>
+</html>

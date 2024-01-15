@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUNCIONES</title>
+    
+    <script type="text/javascript">
+        function Alumno(Nombre, edad, DNI)
+        {this.Nombre=Nombre || "pepe";
+        this.edad=edad|| 9 ;
+        this.DNI=DNI|| "12345678R"; alert("Creación de un objeto de la clase Alumno")}
+
+        Alumno.prototype.Nombre ="pepe";
+        Alumno.prototype.edad=9;
+        Alumno.prototype.DNI="12345678R" ;
+        Alumno.prototype.saludaAlumno= function()
+
+            {alert("hola");}
+
+        var Alumno1 = new Alumno();
+        var Alumno2 = new Alumno("Federico" ,8,"12345678R");
+        var Alumno3 = new Alumno("", 8, "12345678R");
+        
+        alert('El nombre del alumno es: '+  Alumno1.Nombre+" EDAD DE ALUMNO " +  Alumno1.edad+ " DNI DEL ALUMNADO "+ Alumno1.DNI)
+        Alumno1.saludaAlumno();
+        alert('El nombre del alumno es: '+  Alumno2.Nombre+" EDAD DE ALUMNO 2 " +  Alumno2.edad+ " DNI DEL ALUMNADO 2 "+ Alumno2.DNI)
+        Alumno2.saludaAlumno();
+        alert('El nombre del alumno es: '+  Alumno3.Nombre+" EDAD DE ALUMNO  3 " +  Alumno3.edad+ " DNI DEL ALUMNADO 3 "+ Alumno3.DNI)
+        Alumno3.saludaAlumno();
+
+
+
+    </script>
+
+
+</head>
+<body>
+    
+</body>
+</html>
